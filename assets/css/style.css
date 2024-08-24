@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --primary-color: #0062be;
+    --secondary-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    padding: 20px 100px;
+}
+
+.nav-logo img {
+    position: relative;
+    max-width: 80px;
+}
+
+nav ul {
+    padding-right: 100px;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    text-decoration: underline var(--secondary-color);
+    text-underline-offset: 10px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.textBox h2 {
+    color: var(--secondary-color);
+    font-size: 4em;
+    text-transform: uppercase;
+    line-height: 10px;
+}
+
+.textBox h1 {
+    color: var(--secondary-color);
+    font-size: 6em;
+    text-transform: uppercase;
+}
+
+.textBox p {
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.textBox button {
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 11px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.textBox button:hover {
+    background-color: #eeeeee;
+}
+
+.imgBox {
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+
+.imgBox img {
+    max-width: 340px;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    margin-top: 50px;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb img {
+    max-width: 60px;
+}
+
